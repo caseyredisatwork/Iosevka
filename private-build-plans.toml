@@ -15,7 +15,9 @@
 ### Build params that work (slowly) without running out of memory or bogging the system down too much:
 ### Original on old laptop with bad specs:
 ### 		set NODE_OPTIONS=--max-old-space-size=4096 				## Maybe try 2048 ??
-### 		npm run build -- ttf::iosevka-aile-code --jCmd=1
+### 		npm run build -- ttf::iosevka-aile-code --jCmd=1 # can bump this jCmd up based on machine specs
+### 		# to copy to fonts folder, run the following:
+###					robocopy dist\iosevka-aile-code\TTF C:\Users\credis\AppData\Local\Microsoft\Windows\Fonts
 ###################################################################################################
 
 [buildPlans.iosevka-aile-code]
