@@ -1,0 +1,262 @@
+'use strict';
+import * as _s0_t0 from '../../../support/utils.mjs';
+import * as _s0_t1 from '../../../support/gr.mjs';
+var _s0_t2;
+export {
+    _s0_t2 as apply
+};
+var r1_apply, _r1_t0, _r1_t1, _r1_t2, _r1_t3, _r1_t4, _r1_t5, _r1_t6, _r1_t7;
+var _r1_t8 = _s0_t0;
+var r1_mix = _r1_t8.mix;
+var r1_fallback = _r1_t8.fallback;
+var r1_SuffixCfg = _r1_t8.SuffixCfg;
+var _r1_t9 = _s0_t1;
+var r1_Dotless = _r1_t9.Dotless;
+var r1_CvDecompose = _r1_t9.CvDecompose;
+var r1_xn$GlyphBlocks$2Lrc2b = [];
+_s0_t2 = r1_apply = function () {
+    var r266_block, _r266_t4, _r266_t6;
+    var _r266_t3 = this;
+    var _r266_t0 = r1_xn$GlyphBlocks$2Lrc2b;
+    var _r266_t1 = _r266_t0.length;
+    var _r266_t2 = 0;
+    var _r266_t5 = _r266_t2 < _r266_t1;
+    while (_r266_t5) {
+        _r266_t6 = (r266_block = _r266_t0[_r266_t2], r266_block(_r266_t3), _r266_t2 = _r266_t2 + 1);
+        _r266_t5 = _r266_t2 < _r266_t1;
+    }
+    return _r266_t6;
+};
+r1_xn$GlyphBlocks$2Lrc2b.push(function (r270_xn$Capture_Ext$2Lrc2b) {
+    var _r270_t0, _r270_t1;
+    r270_xn$Capture_Ext$2Lrc2b['$defineGlyphBlockImpl$'](r270_xn$Capture_Ext$2Lrc2b, 'Letter-Latin-Lower-Eszet', function (r271_xn$Capture$2Lrc8, r271_xn$ExportCapture$2Lrc4b) {
+        var _r271_t8, _r271_t9;
+        var _r271_t0 = r271_xn$Capture$2Lrc8;
+        var r271_xn$createAndSaveGlyphImpl$2Lrc3c = _r271_t0['$createAndSaveGlyphImpl$'];
+        var r271_xn$NamedParameterPair$2Lrc9b = _r271_t0['$NamedParameterPair$'];
+        var r271_xn$assignUnicodeImpl$2Lrc8b = _r271_t0['$assignUnicodeImpl$'];
+        var r271_xn$execState$2Lrc0b = _r271_t0['$execState$'];
+        var r271_MarkSet = _r271_t0.MarkSet;
+        var r271_DivFrame = _r271_t0.DivFrame;
+        var _r271_t1 = r271_xn$Capture$2Lrc8.Metrics;
+        var r271_Width = _r271_t1.Width;
+        var r271_SB = _r271_t1.SB;
+        var r271_XH = _r271_t1.XH;
+        var r271_Ascender = _r271_t1.Ascender;
+        var r271_Descender = _r271_t1.Descender;
+        var r271_TanSlope = _r271_t1.TanSlope;
+        var r271_HVContrast = _r271_t1.HVContrast;
+        var r271_Upward = _r271_t1.Upward;
+        var r271_Downward = _r271_t1.Downward;
+        var r271_Rightward = _r271_t1.Rightward;
+        var r271_Leftward = _r271_t1.Leftward;
+        var r271_O = _r271_t1.O;
+        var r271_OX = _r271_t1.OX;
+        var r271_Hook = _r271_t1.Hook;
+        var r271_ArchDepth = _r271_t1.ArchDepth;
+        var r271_Stroke = _r271_t1.Stroke;
+        var r271_SLAB = _r271_t1.SLAB;
+        var r271_EssLower = _r271_t1.EssLower;
+        var r271_HalfStroke = _r271_t1.HalfStroke;
+        var r271_RightSB = _r271_t1.RightSB;
+        var r271_Middle = _r271_t1.Middle;
+        var r271_SideJut = _r271_t1.SideJut;
+        var r271_CorrectionOMidX = _r271_t1.CorrectionOMidX;
+        var r271_CorrectionOMidS = _r271_t1.CorrectionOMidS;
+        var r271_AdviceStroke2 = _r271_t1.AdviceStroke2;
+        var r271_StrokeWidthBlend = _r271_t1.StrokeWidthBlend;
+        var r271_ArchDepthAOf = _r271_t1.ArchDepthAOf;
+        var r271_ArchDepthBOf = _r271_t1.ArchDepthBOf;
+        var r271_YSmoothMidR = _r271_t1.YSmoothMidR;
+        var _r271_t2 = r271_xn$Capture$2Lrc8.SpiroFns;
+        var r271_g4 = _r271_t2.g4;
+        var r271_g2 = _r271_t2.g2;
+        var r271_corner = _r271_t2.corner;
+        var r271_flat = _r271_t2.flat;
+        var r271_curl = _r271_t2.curl;
+        var r271_end = _r271_t2.end;
+        var r271_widths = _r271_t2.widths;
+        var r271_heading = _r271_t2.heading;
+        var r271_alsoThru = _r271_t2.alsoThru;
+        var r271_archv = _r271_t2.archv;
+        var r271_arcvh = _r271_t2.arcvh;
+        var r271_dispiro = _r271_t2.dispiro;
+        var _r271_t3 = r271_xn$Capture$2Lrc8.BooleFns;
+        var _r271_t4 = r271_xn$Capture$2Lrc8.CommonShapes.resolve();
+        var r271_HSerif = _r271_t4.HSerif;
+        var r271_HBar = _r271_t4.HBar;
+        var r271_hookstart = _r271_t4.hookstart;
+        var _r271_t5 = r271_xn$Capture$2Lrc8['Common-Derivatives'].resolve();
+        var r271_xn$selectvariant$7Hrq = _r271_t5['select-variant'];
+        var _r271_t6 = r271_xn$Capture$2Lrc8['Letter-Shared-Shapes'].resolve();
+        var r271_FlatHookDepth = _r271_t6.FlatHookDepth;
+        var r271_PalatalHook = _r271_t6.PalatalHook;
+        var r271_CyrDescender = _r271_t6.CyrDescender;
+        var _r271_t7 = r271_xn$Capture$2Lrc8['Letter-Latin-S'].resolve();
+        var r271_AdviceSArchDepth = _r271_t7.AdviceSArchDepth;
+        var r271_xn$NOTAIL$3cah = 0;
+        var r271_DESCENDING = 1;
+        var r271_TAILED = 2;
+        var r271_Traditional = function (r276_fFlathook, r276_slab, r276_tail) {
+            var _r276_t0, _r276_t1;
+            return function () {
+                var r278___, _r278_t0, _r278_t2;
+                var _r278_t1 = this;
+                var r278_currentGlyph = _r278_t1;
+                r278_currentGlyph.include(r271_MarkSet.bp());
+                var r278_l = r271_SB * 1;
+                var r278_xHook = r1_mix(r271_SB, r271_RightSB, 0.75) + r271_HalfStroke * r271_HVContrast;
+                var r278_hd = r271_FlatHookDepth(r271_DivFrame(1));
+                if (r276_fFlathook)
+                    r278_currentGlyph.include(r271_dispiro(r271_flat(r278_xHook, r271_Ascender, r271_widths.lhs()), r271_curl(r278_l + r278_hd.x, r271_Ascender), r271_archv(), r271_flat(r278_l, r271_Ascender - r278_hd.y), r271_curl(r278_l, 0, r271_heading(r271_Downward))));
+                else
+                    r278_currentGlyph.include(r271_dispiro(r271_widths.lhs(), r271_g4(r278_xHook, r271_Ascender - r271_Hook), r271_hookstart(r271_Ascender - r271_O), r271_flat(r278_l, r271_XH), r271_curl(r278_l, 0, r271_heading(r271_Downward))));
+                var r278_t = r1_mix(0, r271_Ascender, 0.7);
+                var r278_tm = r1_mix(r271_Descender, r278_t, 0.625) + r271_HalfStroke;
+                var r278_tl = r1_mix(r278_l, r271_RightSB, 0.35) + r271_HalfStroke * r271_HVContrast;
+                r278_currentGlyph.include(r271_HBar.t(r278_l + 1, r271_RightSB - r271_HalfStroke * 1.2 - r271_OX, r278_t));
+                r278_currentGlyph.include(r271_dispiro(r271_widths.rhs(), r271_flat(r278_tl, r278_tm, r271_heading(r271_Rightward)), r271_curl(r278_tl + 1, r278_tm, r271_heading(r271_Rightward)), r271_g2(r271_RightSB - r271_OX * 1.5, r1_mix(r271_Descender, r278_tm, 0.7)), r271_g2(r271_RightSB - r271_OX * 1.5, r1_mix(r271_Descender, r278_tm, 0.67)), r271_alsoThru(0.5, 0.75), r271_g4(r1_mix(r271_SB, r271_RightSB, 0.35), r271_Descender)));
+                r278_currentGlyph.include(r271_dispiro(r271_widths.center(r271_Stroke * 1.1), r271_corner(r278_tl, r278_tm - r271_Stroke, r271_heading(r271_Upward)), r271_corner(r271_RightSB - r271_HalfStroke * 1.2 - r271_OX, r278_t, r271_heading(r271_Upward))));
+                if (r276_slab)
+                    r278_currentGlyph.include(r271_HSerif.lb(r271_SB, 0, r271_SideJut));
+                r278_currentGlyph.include((_r278_t0 = r276_tail, _r278_t0 === r271_DESCENDING ? r271_CyrDescender.lExt(r271_SB, 0) : _r278_t0 === r271_TAILED ? r271_PalatalHook.lExt(r278_l, 0) : (r278___ = _r278_t0, function () {
+                    var _r288_t1;
+                    var _r288_t0 = this;
+                    var r288_currentGlyph = _r288_t0;
+                    return void 0;
+                })));
+                return void 0;
+            };
+        };
+        var r271_Sulzbacher = function (r289_slab, r289_tail) {
+            var _r289_t0, _r289_t1;
+            return function () {
+                var r291___, _r291_t0, _r291_t2;
+                var _r291_t1 = this;
+                var r291_currentGlyph = _r291_t1;
+                var r291_ymiddle = r1_mix(0, r271_Ascender, 0.5) - r271_HalfStroke;
+                var r291_xFinal = Math.max(r1_mix(r271_SB + r271_Stroke * r271_HVContrast, r271_RightSB, 0.1), r1_mix(r271_SB, r271_RightSB, 0.3));
+                var r291_xMiddle = Math.max(r291_xFinal, r271_SB + r271_Stroke * r271_HVContrast * 1.2, r271_RightSB - r291_ymiddle / 2 - r271_Stroke * 0.75);
+                var r291_xMiddleBot = Math.max(r291_xMiddle, r291_xFinal + 0.01 + r271_TanSlope * r271_Stroke);
+                r291_currentGlyph.include(r271_MarkSet.b());
+                r291_currentGlyph.include(r271_dispiro(r271_widths.rhs(), r271_flat(r271_SB, 0, r271_heading(r271_Upward)), r271_curl(r271_SB, r271_XH), r271_arcvh(), r271_g4(r271_Middle - r271_CorrectionOMidS, r271_Ascender - r271_O), r271_archv(), r271_g4(r271_RightSB + r271_O * 2, r271_YSmoothMidR(r291_ymiddle, r271_Ascender)), r271_g4.left.end(r291_xMiddle, r291_ymiddle, r271_heading(r271_Leftward))));
+                r291_currentGlyph.include(r271_dispiro(r271_widths.rhs(), r271_g4.right.start(r291_xMiddle, r291_ymiddle + r271_Stroke, r271_heading(r271_Rightward)), r271_archv(), r271_g4(r271_RightSB - r271_O, r271_YSmoothMidR(r291_ymiddle + r271_Stroke, 0)), r271_arcvh(), r271_flat(r291_xMiddleBot, 0, r271_heading(r271_Leftward)), r271_curl(r291_xFinal, 0, r271_heading(r271_Leftward))));
+                if (r289_slab)
+                    r291_currentGlyph.include(r271_HSerif.lb(r271_SB, 0, r271_SideJut));
+                r291_currentGlyph.include((_r291_t0 = r289_tail, _r291_t0 === r271_DESCENDING ? r271_CyrDescender.lExt(r271_SB, 0) : _r291_t0 === r271_TAILED ? r271_PalatalHook.lExt(r271_SB, 0) : (r291___ = _r291_t0, function () {
+                    var _r298_t1;
+                    var _r298_t0 = this;
+                    var r298_currentGlyph = _r298_t0;
+                    return void 0;
+                })));
+                return void 0;
+            };
+        };
+        var r271_LongSSLig = function (r299_slab, r299_tail) {
+            var _r299_t0, _r299_t1;
+            return function () {
+                var r301___, _r301_t0, _r301_t2;
+                var _r301_t1 = this;
+                var r301_currentGlyph = _r301_t1;
+                r301_currentGlyph.include(r271_MarkSet.b());
+                var r301_swOuter = r271_AdviceStroke2(2, 3, r271_Ascender);
+                var r301_strokeCoeff = r271_StrokeWidthBlend(0, 1, r301_swInner);
+                var r301_sEndX = Math.max(r1_mix(r271_SB + r271_Stroke * r271_HVContrast, r271_RightSB, 0.1), r1_mix(r271_SB, r271_RightSB, 0.3));
+                var r301_swInner = r271_AdviceStroke2(2.5, 3, r271_Ascender);
+                var r301_ess = r301_swInner * r271_EssLower / r271_Stroke;
+                var r301_sTurnX = Math.max(r301_sEndX, r1_mix(r271_SB, r271_RightSB, 0.3));
+                var r301_sBotX = Math.max(r301_sEndX + 1, r1_mix(r301_sEndX, r271_RightSB, 0.3));
+                var r301_sTopX = r301_sTurnX + (r271_RightSB - r301_sBotX);
+                var r301_sTopHookX = r301_sTopX + 0.5 * r301_swInner * r271_HVContrast;
+                var r301_archDepthATop = r271_ArchDepthAOf(r271_ArchDepth * (r301_sTopHookX - r271_SB - r301_swInner * 0.5) / (r271_RightSB - r271_SB), r271_Width - (r271_RightSB - r301_sTopHookX));
+                var r301_archDepthBTop = r271_ArchDepthBOf(r271_ArchDepth * (r301_sTopHookX - r271_SB - r301_swInner * 0.5) / (r271_RightSB - r271_SB), r271_Width - (r271_RightSB - r301_sTopHookX));
+                var r301_innerSmoothB = 1 * r301_archDepthBTop;
+                r301_currentGlyph.include(r271_dispiro(r271_widths.rhs(r301_swOuter), r271_flat(r271_SB, 0, r271_heading(r271_Upward)), r271_curl(r271_SB, r271_Ascender - r301_archDepthATop), r271_arcvh(), r271_g4(r1_mix(r271_SB, r301_sTopHookX, 0.52) - r271_CorrectionOMidX * r301_swOuter, r271_Ascender - r271_O, r271_widths.rhs(r1_mix(r301_swOuter, r301_swInner, 0.5))), r271_archv(), r271_g4.down.mid(r301_sTopHookX, r271_Ascender - r301_archDepthBTop + r271_TanSlope * r301_swInner, r271_widths.rhs.heading(r301_swInner, r271_Downward)), r271_alsoThru.g2(0.5, 0.5, r271_widths.center(r301_swInner)), r271_g4(r301_sTurnX, r1_mix(r301_innerSmoothB, r271_Ascender - r301_archDepthBTop, 0.5), r271_widths.lhs.heading(r301_swInner, r271_Downward)), r271_alsoThru.g2(0.5, 0.5, r271_widths.center(r301_swInner)), r271_g4(r271_RightSB - r271_OX, r301_innerSmoothB - 2 * r271_TanSlope * r301_swInner, r271_widths.rhs.heading(r301_swInner, r271_Downward)), r271_arcvh(), r271_flat(Math.max(r301_sEndX + 0.1 + r271_TanSlope * r301_swInner, Math.min(r271_RightSB - r301_innerSmoothB, r1_mix(r301_sEndX, r271_RightSB, 0.375))) + r271_CorrectionOMidX * r301_swInner / 2 + r271_TanSlope * r301_swInner, 0), r271_curl(r301_sEndX, 0, r271_heading(r271_Leftward))));
+                if (r299_slab)
+                    r301_currentGlyph.include(r271_HSerif.lb(r271_SB, 0, r271_SideJut));
+                r301_currentGlyph.include((_r301_t0 = r299_tail, _r301_t0 === r271_DESCENDING ? r271_CyrDescender.lExt(r271_SB, 0, new r271_xn$NamedParameterPair$2Lrc9b('sw', r301_swOuter)) : _r301_t0 === r271_TAILED ? r271_PalatalHook.lExt(r271_SB, 0, new r271_xn$NamedParameterPair$2Lrc9b('sw', r301_swOuter)) : (r301___ = _r301_t0, function () {
+                    var _r307_t1;
+                    var _r307_t0 = this;
+                    var r307_currentGlyph = _r307_t0;
+                    return void 0;
+                })));
+                return void 0;
+            };
+        };
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditional', null, r271_Traditional(false, r271_SLAB, r271_xn$NOTAIL$3cah));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditionalDescending', null, r271_Traditional(false, false, r271_DESCENDING));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditionalTailed', null, r271_Traditional(false, false, r271_TAILED));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditionalFlatHook', null, r271_Traditional(true, r271_SLAB, r271_xn$NOTAIL$3cah));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditionalFlatHookDescending', null, r271_Traditional(true, false, r271_DESCENDING));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.traditionalFlatHookTailed', null, r271_Traditional(true, false, r271_TAILED));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.sulzbacher', null, r271_Sulzbacher(r271_SLAB, r271_xn$NOTAIL$3cah));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.sulzbacherDescending', null, r271_Sulzbacher(false, r271_DESCENDING));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.sulzbacherTailed', null, r271_Sulzbacher(false, r271_TAILED));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.longSSLig', null, r271_LongSSLig(r271_SLAB, r271_xn$NOTAIL$3cah));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.longSSLigDescending', null, r271_LongSSLig(false, r271_DESCENDING));
+        r271_xn$createAndSaveGlyphImpl$2Lrc3c('eszet.longSSLigTailed', null, r271_LongSSLig(false, r271_TAILED));
+        return r271_xn$selectvariant$7Hrq('eszet', 223);
+    });
+    return void 0;
+});
+r1_xn$GlyphBlocks$2Lrc2b.push(function (r324_xn$Capture_Ext$2Lrc2b) {
+    var _r324_t0, _r324_t1;
+    r324_xn$Capture_Ext$2Lrc2b['$defineGlyphBlockImpl$'](r324_xn$Capture_Ext$2Lrc2b, 'Letter-Latin-Upper-Eszet', function (r325_xn$Capture$2Lrc8, r325_xn$ExportCapture$2Lrc4b) {
+        var _r325_t6, _r325_t7;
+        var _r325_t0 = r325_xn$Capture$2Lrc8;
+        var r325_xn$createAndSaveGlyphImpl$2Lrc3c = _r325_t0['$createAndSaveGlyphImpl$'];
+        var r325_xn$NamedParameterPair$2Lrc9b = _r325_t0['$NamedParameterPair$'];
+        var r325_xn$assignUnicodeImpl$2Lrc8b = _r325_t0['$assignUnicodeImpl$'];
+        var r325_xn$execState$2Lrc0b = _r325_t0['$execState$'];
+        var r325_MarkSet = _r325_t0.MarkSet;
+        var _r325_t1 = r325_xn$Capture$2Lrc8.Metrics;
+        var r325_SB = _r325_t1.SB;
+        var r325_CAP = _r325_t1.CAP;
+        var r325_XH = _r325_t1.XH;
+        var r325_TanSlope = _r325_t1.TanSlope;
+        var r325_HVContrast = _r325_t1.HVContrast;
+        var r325_Downward = _r325_t1.Downward;
+        var r325_Rightward = _r325_t1.Rightward;
+        var r325_Leftward = _r325_t1.Leftward;
+        var r325_O = _r325_t1.O;
+        var r325_Stroke = _r325_t1.Stroke;
+        var r325_SLAB = _r325_t1.SLAB;
+        var r325_HalfStroke = _r325_t1.HalfStroke;
+        var r325_RightSB = _r325_t1.RightSB;
+        var r325_Middle = _r325_t1.Middle;
+        var r325_SideJut = _r325_t1.SideJut;
+        var r325_YSmoothMidR = _r325_t1.YSmoothMidR;
+        var _r325_t2 = r325_xn$Capture$2Lrc8.SpiroFns;
+        var r325_g4 = _r325_t2.g4;
+        var r325_flat = _r325_t2.flat;
+        var r325_curl = _r325_t2.curl;
+        var r325_widths = _r325_t2.widths;
+        var r325_heading = _r325_t2.heading;
+        var r325_archv = _r325_t2.archv;
+        var r325_arcvh = _r325_t2.arcvh;
+        var r325_dispiro = _r325_t2.dispiro;
+        var _r325_t3 = r325_xn$Capture$2Lrc8.BooleFns;
+        var _r325_t4 = r325_xn$Capture$2Lrc8.CommonShapes.resolve();
+        var r325_HSerif = _r325_t4.HSerif;
+        var _r325_t5 = r325_xn$Capture$2Lrc8['Common-Derivatives'].resolve();
+        return r325_xn$createAndSaveGlyphImpl$2Lrc3c('Eszet', 7838, function () {
+            var _r330_t1;
+            var _r330_t0 = this;
+            var r330_currentGlyph = _r330_t0;
+            r330_currentGlyph.include(r325_MarkSet.capital());
+            var r330_ymiddle = r1_mix(0, r325_CAP, 0.5) - r325_HalfStroke;
+            var r330_ymiddleCap = r1_mix(0, r325_CAP, 0.54) - r325_HalfStroke;
+            var r330_xFinal = Math.max(r1_mix(r325_SB + r325_Stroke * r325_HVContrast, r325_RightSB, 0.1), r1_mix(r325_SB, r325_RightSB, 0.3));
+            var r330_xMiddle = Math.max(r330_xFinal, r325_SB + r325_Stroke * r325_HVContrast * 1.2, r325_RightSB - r330_ymiddle / 2 - r325_Stroke * 0.75);
+            var r330_xMiddleBot = Math.max(r330_xMiddle, r330_xFinal + 0.01 + r325_TanSlope * r325_Stroke);
+            var r330_rightTopX = r325_RightSB + r325_O;
+            r330_currentGlyph.include(r325_dispiro(r325_widths.lhs(), r325_flat(r330_rightTopX, r325_CAP, r325_heading(r325_Leftward)), r325_curl(r325_Middle, r325_CAP), r325_archv(), r325_flat(r325_SB, r325_XH), r325_curl(r325_SB, 0, r325_heading(r325_Downward))));
+            r330_currentGlyph.include(r325_dispiro(r325_widths.rhs(), r325_g4(r330_xMiddle, r330_ymiddleCap + r325_Stroke, r325_heading(r325_Rightward)), r325_archv(), r325_g4(r325_RightSB - r325_O * 2, r325_YSmoothMidR(r330_ymiddleCap + r325_Stroke, 0)), r325_arcvh(), r325_flat(r330_xMiddleBot, 0), r325_curl(r330_xFinal, 0, r325_heading(r325_Leftward))));
+            r330_currentGlyph.include(r325_dispiro(r325_widths.rhs(), r325_g4(r330_rightTopX, r325_CAP - r325_Stroke), r325_g4(r330_xMiddle, r330_ymiddleCap + r325_Stroke, r325_widths(r325_Stroke, 0))));
+            if (r325_SLAB)
+                r330_currentGlyph.include(r325_HSerif.lb(r325_SB, 0, r325_SideJut));
+            return void 0;
+        });
+    });
+    return void 0;
+});

@@ -1,0 +1,84 @@
+'use strict';
+import * as _s0_t0 from '../../../support/utils.mjs';
+var _s0_t1;
+export {
+    _s0_t1 as apply
+};
+var r1_apply, _r1_t0, _r1_t1, _r1_t2, _r1_t3, _r1_t4, _r1_t5, _r1_t6, _r1_t7;
+var _r1_t8 = _s0_t0;
+var r1_mix = _r1_t8.mix;
+var r1_linreg = _r1_t8.linreg;
+var r1_clamp = _r1_t8.clamp;
+var r1_fallback = _r1_t8.fallback;
+var r1_xn$GlyphBlocks$2Lrc2b = [];
+_s0_t1 = r1_apply = function () {
+    var r265_block, _r265_t4, _r265_t6;
+    var _r265_t3 = this;
+    var _r265_t0 = r1_xn$GlyphBlocks$2Lrc2b;
+    var _r265_t1 = _r265_t0.length;
+    var _r265_t2 = 0;
+    var _r265_t5 = _r265_t2 < _r265_t1;
+    while (_r265_t5) {
+        _r265_t6 = (r265_block = _r265_t0[_r265_t2], r265_block(_r265_t3), _r265_t2 = _r265_t2 + 1);
+        _r265_t5 = _r265_t2 < _r265_t1;
+    }
+    return _r265_t6;
+};
+r1_xn$GlyphBlocks$2Lrc2b.push(function (r269_xn$Capture_Ext$2Lrc2b) {
+    var _r269_t0, _r269_t1;
+    r269_xn$Capture_Ext$2Lrc2b['$defineGlyphBlockImpl$'](r269_xn$Capture_Ext$2Lrc2b, 'Symbol-Math-Negation', function (r270_xn$Capture$2Lrc8, r270_xn$ExportCapture$2Lrc4b) {
+        var _r270_t5, _r270_t6;
+        var _r270_t0 = r270_xn$Capture$2Lrc8;
+        var r270_xn$createAndSaveGlyphImpl$2Lrc3c = _r270_t0['$createAndSaveGlyphImpl$'];
+        var r270_xn$NamedParameterPair$2Lrc9b = _r270_t0['$NamedParameterPair$'];
+        var r270_xn$assignUnicodeImpl$2Lrc8b = _r270_t0['$assignUnicodeImpl$'];
+        var r270_xn$execState$2Lrc0b = _r270_t0['$execState$'];
+        var _r270_t1 = r270_xn$Capture$2Lrc8.Metrics;
+        var r270_CAP = _r270_t1.CAP;
+        var r270_Descender = _r270_t1.Descender;
+        var r270_SymbolMid = _r270_t1.SymbolMid;
+        var r270_BgOpTop = _r270_t1.BgOpTop;
+        var r270_BgOpBot = _r270_t1.BgOpBot;
+        var _r270_t2 = r270_xn$Capture$2Lrc8.SpiroFns;
+        var _r270_t3 = r270_xn$Capture$2Lrc8.BooleFns;
+        var _r270_t4 = r270_xn$Capture$2Lrc8.NotGlyphFn.resolve();
+        var r270_notGlyph = _r270_t4.notGlyph;
+        r270_notGlyph(null, 8800, 'equal');
+        r270_notGlyph(null, 8802, 'ident');
+        r270_notGlyph(null, 8813, 'equivalentTo');
+        r270_notGlyph(null, 8876, 'vdash');
+        r270_notGlyph(null, 8877, 'tautology');
+        r270_notGlyph(null, 8878, 'forces');
+        r270_notGlyph(null, 8879, 'doubleForces');
+        r270_notGlyph.left(null, 8814, 'less');
+        r270_notGlyph.right(null, 8815, 'greater');
+        r270_notGlyph.left(null, 8938, 'normalSubsetOf');
+        r270_notGlyph.right(null, 8939, 'normalSupersetOf');
+        r270_notGlyph.left(null, 8832, 'precedes');
+        r270_notGlyph.right(null, 8833, 'succeeds');
+        r270_notGlyph(null, 8769, 'sym', r1_mix(r270_SymbolMid, r270_BgOpTop, 0.75), r1_mix(r270_SymbolMid, r270_BgOpBot, 0.75));
+        r270_notGlyph(null, 8772, 'symEq', r1_mix(r270_SymbolMid, r270_BgOpTop, 0.75), r1_mix(r270_SymbolMid, r270_BgOpBot, 0.75));
+        r270_notGlyph(null, 8775, 'symEqEq');
+        r270_notGlyph(null, 8777, 'approx', r1_mix(r270_SymbolMid, r270_BgOpTop, 0.75), r1_mix(r270_SymbolMid, r270_BgOpBot, 0.75));
+        r270_notGlyph.left(null, 8836, 'subst');
+        r270_notGlyph.right(null, 8837, 'supst');
+        r270_notGlyph.left(null, 8840, 'substBar');
+        r270_notGlyph.right(null, 8841, 'supstBar');
+        r270_notGlyph.left(null, 8930, 'prefixBar');
+        r270_notGlyph.right(null, 8931, 'suffixBar');
+        r270_notGlyph.left(null, 8713, 'element');
+        r270_notGlyph.right(null, 8716, 'turnElement');
+        r270_notGlyph.left(null, 8816, 'lessEq');
+        r270_notGlyph.right(null, 8817, 'greaterEq');
+        r270_notGlyph.left(null, 8820, 'lessSym');
+        r270_notGlyph.right(null, 8821, 'greaterSym');
+        r270_notGlyph.left(null, 8940, 'normalSubsetEq');
+        r270_notGlyph.right(null, 8941, 'normalSupersetEq');
+        r270_notGlyph.left(null, 8928, 'precedesEqSlant');
+        r270_notGlyph.right(null, 8929, 'succeedsEqSlant');
+        r270_notGlyph(null, 8824, 'lessGreater');
+        r270_notGlyph(null, 8825, 'greaterLess');
+        return r270_notGlyph.right2(null, 8708, 'exists', r270_CAP - r270_Descender / 2, r270_Descender / 2, 0.4);
+    });
+    return void 0;
+});

@@ -1,0 +1,45 @@
+'use strict';
+import * as _s0_t1 from './math/not-glyph-fn.mjs';
+import * as _s0_t2 from './math/arith.mjs';
+import * as _s0_t3 from './math/complement.mjs';
+import * as _s0_t4 from './math/dots-and-colons.mjs';
+import * as _s0_t5 from './math/frame.mjs';
+import * as _s0_t6 from './math/geometry.mjs';
+import * as _s0_t7 from './math/integrals.mjs';
+import * as _s0_t8 from './math/large-operators.mjs';
+import * as _s0_t9 from './math/letter-like.mjs';
+import * as _s0_t10 from './math/logicals.mjs';
+import * as _s0_t11 from './math/other.mjs';
+import * as _s0_t12 from './math/relation.mjs';
+import * as _s0_t13 from './math/v-and-cup.mjs';
+import * as _s0_t14 from './math/boxed.mjs';
+import * as _s0_t15 from './math/circled.mjs';
+import * as _s0_t16 from './math/negation.mjs';
+import * as _s0_t17 from './math/apl.mjs';
+var _s0_t0;
+export {
+    _s0_t0 as apply
+};
+var r1_apply, _r1_t0, _r1_t1, _r1_t2, _r1_t3, _r1_t4, _r1_t5, _r1_t6, _r1_t7;
+_s0_t0 = r1_apply = function () {
+    var _r263_t1;
+    var _r263_t0 = this;
+    var r263_xn$Capture$2Lrc181 = _r263_t0;
+    _s0_t1.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t2.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t3.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t4.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t5.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t6.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t7.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t8.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t9.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t10.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t11.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t12.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t13.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t14.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t15.apply.call(r263_xn$Capture$2Lrc181);
+    _s0_t16.apply.call(r263_xn$Capture$2Lrc181);
+    return _s0_t17.apply.call(r263_xn$Capture$2Lrc181);
+};
