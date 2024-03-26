@@ -1,0 +1,98 @@
+###################################################################################################
+### NOTE: Be careful using the customizer, it strips things out when you do an import.
+### Best to just do an import, make changes, then take the modified changes and incoroporate them here
+### rather than take the entire result
+
+###################################################################################################
+### pre-reqs on new install:
+### - download ttfautohint (https://freetype.org/ttfautohint/#download)
+### 	- copy .exe(s) from zip file to a directory in the PATH
+### - run npm install
+###
+###################################################################################################
+
+###################################################################################################
+### Build params that work (slowly) without running out of memory or bogging the system down too much:
+### Original on old laptop with bad specs:
+### 		set NODE_OPTIONS=--max-old-space-size=4096 				## Maybe try 2048 ??
+### 		npm run build -- ttf::iosevka-aile-code --jCmd=1
+###################################################################################################
+
+[buildPlans.iosevka-aile-code]
+family = "Iosevka Aile Code"
+desc = "Sans-serif"
+spacing = "quasi-proportional"
+serifs = "sans"
+#no-cv-ss = true
+noCvSs = true
+# export-glyph-names = true
+
+[buildPlans.iosevka-aile-code.variants.design]
+capital-i = "short-serifed"
+capital-j = "serifless"
+capital-k = "straight-serifless"
+capital-m = "flat-bottom-serifless"
+capital-w = "straight-flat-top-serifless"
+a = "double-storey-serifless"
+d = "toothed-serifless"
+e = "flat-crossbar"
+f = "flat-hook-serifless"
+g = "single-storey-serifless"
+i = "serifless"
+j = "flat-hook-serifless"
+k = "straight-serifless"
+l = "zshaped"
+r = "compact-serifless"
+t = "flat-hook"
+u = "toothed-serifless"
+w = "straight-flat-top-serifless"
+y = "straight-serifless"
+long-s = "flat-hook-serifless"
+eszet = "longs-s-lig-serifless"
+lower-iota = "flat-tailed"
+lower-lambda = "straight-turn"
+cyrl-ef = "serifless"
+cyrl-capital-ka = "symmetric-connected-serifless"
+cyrl-ka = "symmetric-connected-serifless"
+cyrl-em = "flat-bottom-serifless"
+cyrl-capital-u = "straight-serifless"
+at = "fourfold"
+percent = "rings-continuous-slash"
+
+# Letterform control for U+1D670 ... U+1D6A3
+[buildPlans.iosevka-aile-code.derivingVariants.mathtt.design]
+capital-i = "short-serifed"
+capital-j = "serifless"
+capital-k = "straight-serifless"
+capital-m = "flat-bottom-serifless"
+capital-w = "straight-flat-top-serifless"
+a = "double-storey-serifless"
+d = "toothed-serifless"
+e = "flat-crossbar"
+f = "flat-hook-serifless"
+g = "single-storey-serifless"
+i = "serifed"
+j = "flat-hook-serifed"
+k = "straight-serifless"
+l = "zshaped"
+r = "compact-serifless"
+t = "flat-hook"
+u = "toothed-serifless"
+w = "straight-flat-top-serifless"
+y = "straight-serifless"
+long-s = "flat-hook-serifless"
+eszet = "longs-s-lig-serifless"
+lower-iota = "flat-tailed"
+lower-lambda = "straight-turn"
+cyrl-ef = "serifless"
+cyrl-capital-ka = "symmetric-connected-serifless"
+cyrl-ka = "symmetric-connected-serifless"
+cyrl-em = "flat-bottom-serifless"
+cyrl-capital-u = "straight-serifless"
+at = "fourfold"
+percent = "rings-continuous-slash"
+
+[buildPlans.iosevka-aile-code.widths.normal]
+shape = 600
+menu = 5
+css = "normal"
