@@ -16,8 +16,9 @@
 ### Original on old laptop with bad specs:
 ### 		set NODE_OPTIONS=--max-old-space-size=4096 				## Maybe try 2048 ??
 ### 		npm run build -- ttf::iosevka-aile-code --jCmd=1 # can bump this jCmd up based on machine specs
-### 		# to copy to fonts folder, run the following:
+### 		# To install fonts on Windows, the following:
 ###					robocopy dist\iosevka-aile-code\TTF C:\Users\credis\AppData\Local\Microsoft\Windows\Fonts
+###			# For Arch Linux, run the "refreshArchLinux.sh" script
 ###################################################################################################
 
 [buildPlans.iosevka-aile-code]
