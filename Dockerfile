@@ -6,6 +6,9 @@ ARG FONT_NAME=iosevka-aile-code
 # Check https://github.com/be5invis/Iosevka/releases for font version
 ARG FONT_VERSION=34.2.1
 
+# Check https://github.com/ryanoasis/nerd-fonts/releases for patcher version
+ARG NERD_FONTS_VERSION=3.4.0
+
 ################################################################
 
 FROM oven/bun:debian AS base_builder
@@ -28,7 +31,8 @@ RUN \
         curl \
         fontforge \
         python3-fontforge \
-        ttfautohint
+        ttfautohint \
+        unzip
 EOF
 
 
@@ -44,19 +48,32 @@ RUN <<-EOF
 EOF
 
 
+FROM base_builder AS nerd_fonts_src
+
+ARG NERD_FONTS_VERSION
+ARG BUILD_DIR
+
+WORKDIR ${BUILD_DIR}
+RUN <<-EOF
+    set -ex
+    curl -sSL https://github.com/ryanoasis/nerd-fonts/releases/download/v${NERD_FONTS_VERSION}/FontPatcher.zip \
+        -o FontPatcher.zip
+    unzip FontPatcher.zip -d nerd-fonts
+    rm FontPatcher.zip
+EOF
+
+
 FROM base_builder AS builder_iosevka
 
 ARG TARGETARCH
 ARG FONT_NAME
 ARG BUILD_DIR
 
-WORKDIR ${BUILD_DIR}/src/glyphs
-COPY --link nerd/glyphs .
-
 WORKDIR ${BUILD_DIR}
-COPY --link nerd/font-patcher .
 COPY --link ./src/docker_run.py .
 RUN chmod +x docker_run.py
+
+COPY --from=nerd_fonts_src ${BUILD_DIR}/nerd-fonts ${BUILD_DIR}/nerd-fonts
 
 WORKDIR ${BUILD_DIR}/iosevka
 COPY --from=iosevka_src /iosevka .

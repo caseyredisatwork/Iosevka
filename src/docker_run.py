@@ -14,7 +14,7 @@ def patch_fonts(index, ttf_file):
     log_file = f"{output_dir}/patch.{index}.log"
     command = " ".join(
         [
-            "python3 font-patcher -q",
+            "python3 nerd-fonts/font-patcher -q",
             "-s",
             "-s",
             "-l",
@@ -43,7 +43,7 @@ def patch_fonts(index, ttf_file):
 def main():
     build_dir = environ.get("BUILD_DIR", "/build")
     output_dir = environ.get("OUTPUT_DIR", "/output")
-    font_name = environ.get("FONT_NAME", "afio")
+    font_name = environ.get("FONT_NAME", "iosevka-aile-code")
 
     ttf_dir = path.join(build_dir, f"iosevka/dist/{font_name}/TTF")
     ttf_files = glob.glob(f"{ttf_dir}/*.ttf", recursive=True)
