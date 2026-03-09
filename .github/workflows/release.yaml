@@ -33,6 +33,13 @@ jobs:
       - name: Display structure of created files
         run: ls -R ./_output
 
+      - name: Upload patch logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: patch-logs
+          path: ./_output/patch.*.log
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
