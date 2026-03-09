@@ -16,6 +16,7 @@ def patch_fonts(index, ttf_file):
         [
             "python3 font-patcher -q",
             "-s",
+            "-s",
             "-l",
             "-c",
             "--careful",
