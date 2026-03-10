@@ -15,9 +15,9 @@ def patch_fonts(index, ttf_file):
     command = " ".join(
         [
             "python3 nerd-fonts/font-patcher -q",
-            "-s",
-            "-s",
-            "-l",
+            # test "-s",
+            # test "-s",
+            # test "-l",
             "-c",
             "--careful",
             "--makegroups -1",  # don't rename font
