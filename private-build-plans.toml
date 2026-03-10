@@ -22,9 +22,11 @@
 ###################################################################################################
 
 [buildPlans.iosevka-aile-code]
-family = "Iosevka Aile Code"
+#family = "Iosevka Aile Code"
+#spacing = "quasi-proportional"
+family = "Iosevka Aile Code Fixed"
+spacing = "fixed"
 desc = "Sans-serif"
-spacing = "quasi-proportional"
 serifs = "sans"
 #no-cv-ss = true
 noCvSs = true
