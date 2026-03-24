@@ -9,7 +9,7 @@ BASE_URL="https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs"
 
 xargs -n1 -P20 -I{} curl --create-dirs -svLo {} "$BASE_URL"/{} <<EOF
 "codicons/codicon.ttf"
-"devicons/devicons.ttf"
+"devicons/devicons.otf"
 "font-awesome/FontAwesome.otf"
 "materialdesign/MaterialDesignIconsDesktop.ttf"
 "materialdesign/materialdesignicons-webfont.ttf"
